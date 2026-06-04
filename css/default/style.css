@@ -36,6 +36,28 @@ html {
 main {
 }
 
+.nav-link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: transform 0.5s ease, background-size 0.5s ease;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    transform-origin: center;
+    transform: scale(1.1);
+    background-size: 100% 2px;
+}
+
 .grid-container {
     display: grid;
     grid-template:
