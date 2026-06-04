@@ -29,7 +29,7 @@ jobs:
       uses: github/codeql-action/analyze@v3
 
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: github.event_name == 'push' && github.ref == 'refs/head/main'
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     needs: sast-scan
