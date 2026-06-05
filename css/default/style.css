@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 a, a:visited {
     color: inherit;
 }
@@ -34,28 +39,14 @@ html {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-link {
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: transform 0.5s ease, background-size 0.5s ease;
-}
-
-.nav-link:visited {
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    transform-origin: center;
-    transform: scale(1.1);
-    background-size: 100% 2px;
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.2s forwards;
 }
 
 .grid-container {
@@ -118,11 +109,52 @@ main {
     font-size: 1.2rem;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.main-content a {
+    display: inline;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.main-content p {
+    display: block;
+    text-align: center;
+}
+
 .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+.nav-link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: transform 0.5s ease, background-size 0.5s ease;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    transform-origin: center;
+    transform: scale(1.1);
+    background-size: 100% 2px;
 }
 
 .separator {
