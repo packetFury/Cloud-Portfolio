@@ -22,3 +22,10 @@ However, there can be unforeseen new semantic vulnerabilities that arise from me
 
 #### Branch Protection
 This project has Branch Protection Rules set up to forbid direct commits to Main and to require that the SAST tests were successful before allowing a Pull Request to be merged to the main branch.
+
+## TODO:
+* Finish default CSS theme and layout
+* Switch Gallery page to a database-driven system instead of hardcoding each project thumbnail
+* Set up Gallery sub-pages to give a brief synopsis of each project instead of directly linking to the repo
+* Design a better layout for the Experience page so it's not a marathon of walls of text
+* Implement a backend visitor counter that tracks unique visitors in the last 30 days
