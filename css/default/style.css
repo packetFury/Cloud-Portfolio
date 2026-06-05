@@ -1,6 +1,7 @@
 :root {
     --color-main-bg: rgb(24, 26, 27);
     --color-primary-accent: rgba(255, 255, 255, 0.2);
+    --color-secondary-accent: rgba(255,255,255, 0.75);
     --color-primary-font: rgba(255, 255, 255, 255);
 }
 
@@ -38,10 +39,22 @@ html {
     color: var(--color-primary-font);
 }
 
+li {
+    margin-bottom: 0.5em;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+strong {
+    color: var(--color-secondary-accent)
 }
 
 .fadeIn {
@@ -126,6 +139,14 @@ main {
 .main-content p {
     display: block;
     text-align: center;
+}
+
+.main-content-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80vw;
 }
 
 .nav-item {
