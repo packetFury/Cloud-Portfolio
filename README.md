@@ -29,3 +29,6 @@ This project has Branch Protection Rules set up to forbid direct commits to Main
 * Set up Gallery sub-pages to give a brief synopsis of each project instead of directly linking to the repo
 * Design a better layout for the Experience page so it's not a marathon of walls of text
 * Implement a backend visitor counter that tracks unique visitors in the last 30 days
+* Finalize CSS for proper reactive design
+* Develop alternative styles and layouts and allow the user to choose them
+* Spin up the AWS version of this project
